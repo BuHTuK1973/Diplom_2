@@ -59,7 +59,6 @@ public class OrdersGetAPITest {
                 .statusCode(200)
                 .extract()
                 .path("success");
-        ;
         Assert.assertTrue("Ожидается, что будет получен список заказов конкретного пользователя", orderGotten);
     }
 
